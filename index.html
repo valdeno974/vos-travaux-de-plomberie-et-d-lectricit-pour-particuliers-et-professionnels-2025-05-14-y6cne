@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +20,24 @@
     <header class="fixed w-full bg-white shadow-md z-50">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-xl font-bold text-gray-800">Plomberie & Électricité</div>
+                <a href="https://valdeno974.github.io/vos-travaux-de-plomberie-et-d-lectricit-pour-particuliers-et-professionnels-2025-05-14-y6cne" class="text-xl font-bold text-gray-800 hover:text-blue-600 transition-colors duration-300">Plomberie & Électricité</a>
                 <div class="hidden md:flex space-x-8">
                     <a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Services</a>
                     <a href="#avantages" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Avantages</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Témoignages</a>
+                    <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
                     <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
                 </div>
+                <button class="mobile-menu-button md:hidden" aria-label="Menu mobile">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4">
+                <a href="#services" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors duration-300">Services</a>
+                <a href="#avantages" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors duration-300">Avantages</a>
+                <a href="#testimonials" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors duration-300">Témoignages</a>
+                <a href="#faq" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
             </div>
         </nav>
     </header>
@@ -27,82 +47,172 @@
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                        Vos travaux de plomberie et d'électricité pour particuliers et professionnels
+                        Experts en Plomberie et Électricité à votre Service
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-600 mb-12">
-                        Vos travaux de plomberie et d'électricité à la Réunion
+                        Solutions professionnelles sur mesure pour particuliers et entreprises à la Réunion
                     </p>
-                    <a href="#contact" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300">
-                        Contactez-nous
+                    <a href="#contact" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                        Demandez un devis gratuit
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="services" class="py-24 bg-white">
+        <section id="about" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">À Propos de Nous</h2>
+                <div class="max-w-4xl mx-auto">
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Fondée en 2010, notre entreprise est née de la passion de deux artisans expérimentés déterminés à offrir des services de qualité supérieure en plomberie et électricité à la Réunion. Au fil des années, nous avons bâti notre réputation sur l'excellence technique et le service client personnalisé.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Notre mission est de fournir des solutions durables et innovantes tout en respectant les plus hauts standards de sécurité et de qualité. Nos valeurs fondamentales - l'intégrité, la transparence et le professionnalisme - guident chacune de nos interventions pour garantir votre entière satisfaction.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-24 bg-gray-50">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">Nos Services</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                         <div class="text-blue-600 mb-4">
                             <i class="fas fa-wrench text-3xl"></i>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Dépannage</h3>
-                        <p class="text-gray-600">Intervention rapide pour tous vos problèmes urgents</p>
+                        <h3 class="text-xl font-semibold mb-4">Dépannage Urgent</h3>
+                        <p class="text-gray-600">Intervention rapide 24/7 pour tous vos problèmes urgents. Diagnostic précis et réparation efficace pour minimiser les désagréments.</p>
                     </div>
-                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                         <div class="text-blue-600 mb-4">
                             <i class="fas fa-home text-3xl"></i>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Rénovation</h3>
-                        <p class="text-gray-600">Modernisation de vos installations existantes</p>
+                        <h3 class="text-xl font-semibold mb-4">Rénovation Complète</h3>
+                        <p class="text-gray-600">Modernisation intégrale de vos installations avec les dernières technologies. Plans personnalisés et devis détaillés pour votre tranquillité.</p>
                     </div>
-                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                         <div class="text-blue-600 mb-4">
                             <i class="fas fa-plug text-3xl"></i>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Installation</h3>
-                        <p class="text-gray-600">Mise en place de nouveaux équipements aux normes</p>
+                        <h3 class="text-xl font-semibold mb-4">Installation Neuve</h3>
+                        <p class="text-gray-600">Mise en place d'équipements modernes aux normes actuelles. Garantie décennale et suivi personnalisé de votre projet.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="avantages" class="py-24 bg-gray-50">
+        <section id="avantages" class="py-24 bg-white">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">Nos Avantages</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="text-center">
+                    <div class="text-center transform hover:scale-105 transition-transform duration-300">
                         <div class="text-blue-600 mb-4">
                             <i class="fas fa-bolt text-4xl"></i>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Rapidité</h3>
-                        <p class="text-gray-600">Intervention dans les plus brefs délais</p>
+                        <h3 class="text-xl font-semibold mb-4">Rapidité d'Intervention</h3>
+                        <p class="text-gray-600">Intervention garantie sous 2 heures pour les urgences. Service disponible 7j/7 pour votre tranquillité.</p>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center transform hover:scale-105 transition-transform duration-300">
                         <div class="text-blue-600 mb-4">
                             <i class="fas fa-check-circle text-4xl"></i>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Efficacité</h3>
-                        <p class="text-gray-600">Des solutions adaptées à vos besoins</p>
+                        <h3 class="text-xl font-semibold mb-4">Expertise Certifiée</h3>
+                        <p class="text-gray-600">Plus de 15 ans d'expérience et une équipe de professionnels qualifiés. Certification RGE et garantie décennale.</p>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center transform hover:scale-105 transition-transform duration-300">
                         <div class="text-blue-600 mb-4">
                             <i class="fas fa-shield-alt text-4xl"></i>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Durabilité</h3>
-                        <p class="text-gray-600">Des installations conçues pour durer</p>
+                        <h3 class="text-xl font-semibold mb-4">Solutions Durables</h3>
+                        <p class="text-gray-600">Matériaux de première qualité et techniques innovantes. Garantie sur toutes nos interventions.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="py-24 bg-blue-600">
+        <section id="testimonials" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">Témoignages Clients</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Intervention rapide et efficace pour une fuite d'eau urgente. L'équipe a été très professionnelle et a tout nettoyé après l'intervention. Je recommande vivement leurs services !"</p>
+                        <p class="font-semibold">Marie D.</p>
+                        <p class="text-sm text-gray-500">Propriétaire - Saint-Denis</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Rénovation complète de l'installation électrique de notre restaurant. Travail soigné, respect des délais et excellent suivi. Un vrai partenaire de confiance."</p>
+                        <p class="font-semibold">Philippe M.</p>
+                        <p class="text-sm text-gray-500">Restaurateur - Saint-Pierre</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Installation d'une pompe à chaleur et rénovation de la plomberie. Équipe très compétente et à l'écoute. Résultat impeccable."</p>
+                        <p class="font-semibold">Sophie L.</p>
+                        <p class="text-sm text-gray-500">Particulier - Saint-Paul</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Service client exceptionnel et tarifs transparents. La qualité du travail est remarquable et le suivi après-vente très professionnel."</p>
+                        <p class="font-semibold">Laurent R.</p>
+                        <p class="text-sm text-gray-500">Gérant d'immeuble - Le Port</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">Questions Fréquentes</h2>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div class="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-3">Quels sont vos délais d'intervention ?</h3>
+                        <p class="text-gray-600">Pour les urgences, nous intervenons sous 2 heures. Pour les travaux planifiés, nous établissons un calendrier précis selon vos besoins et nos disponibilités.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-3">Proposez-vous des devis gratuits ?</h3>
+                        <p class="text-gray-600">Oui, nous réalisons des devis détaillés gratuits pour tous types de travaux. Le devis inclut le détail des interventions et une estimation précise des coûts.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-3">Quelles garanties offrez-vous ?</h3>
+                        <p class="text-gray-600">Nous offrons une garantie décennale sur nos installations et une garantie de 2 ans sur nos interventions de dépannage. Nous sommes également assurés pour votre tranquillité.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-3">Intervenez-vous le week-end ?</h3>
+                        <p class="text-gray-600">Oui, nous assurons un service 7j/7 pour les urgences. Pour les travaux planifiés, nous pouvons également intervenir le week-end selon disponibilité.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-3">Quels modes de paiement acceptez-vous ?</h3>
+                        <p class="text-gray-600">Nous acceptons les paiements par carte bancaire, chèque, virement et espèces. Des facilités de paiement peuvent être proposées pour les grands travaux.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-blue-600" style="background-image: url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80'); background-blend-mode: overlay; background-size: cover;">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Contactez-nous</h2>
-                    <p class="text-xl text-white mb-8">Pour tous vos projets de plomberie et d'électricité</p>
-                    <a href="mailto:plumbing-electricity@outlook.fr" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Contactez Nos Experts</h2>
+                    <p class="text-xl text-white mb-8">Disponibles 7j/7 pour tous vos projets de plomberie et d'électricité</p>
+                    <a href="mailto:plumbing-electricity@outlook.fr" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                         plumbing-electricity@outlook.fr
                     </a>
                 </div>
@@ -124,16 +234,17 @@
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Services</h3>
                     <ul class="text-gray-400">
-                        <li class="mb-2">Dépannage</li>
-                        <li class="mb-2">Rénovation</li>
-                        <li>Installation</li>
+                        <li class="mb-2 hover:text-white transition-colors duration-300">Dépannage</li>
+                        <li class="mb-2 hover:text-white transition-colors duration-300">Rénovation</li>
+                        <li class="hover:text-white transition-colors duration-300">Installation</li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Légal</h3>
                     <ul class="text-gray-400">
-                        <li class="mb-2"><a href="#" class="hover:text-white transition-colors duration-300">Mentions légales</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Politique de confidentialité</a></li>
+                        <li class="mb-2"><a href="https://valdeno974.github.io/vos-travaux-de-plomberie-et-d-lectricit-pour-particuliers-et-professionnels-2025-05-14-y6cne/terms.html" class="hover:text-white transition-colors duration-300">Mentions légales</a></li>
+                        <li class="mb-2"><a href="https://valdeno974.github.io/vos-travaux-de-plomberie-et-d-lectricit-pour-particuliers-et-professionnels-2025-05-14-y6cne/privacy.html" class="hover:text-white transition-colors duration-300">Politique de confidentialité</a></li>
+                        <li><a href="https://valdeno974.github.io/vos-travaux-de-plomberie-et-d-lectricit-pour-particuliers-et-professionnels-2025-05-14-y6cne/blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
             </div>
@@ -142,5 +253,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
